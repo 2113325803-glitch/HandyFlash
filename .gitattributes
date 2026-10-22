@@ -1,0 +1,23 @@
+# 统一换行：仓库里一律存 LF，Windows / macOS / iPad 三端都不会出现整文件 diff
+* text=auto eol=lf
+
+*.swift     text eol=lf
+*.md        text eol=lf
+*.json      text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.txt       text eol=lf
+*.plist     text eol=lf
+.gitignore  text eol=lf
+.gitattributes text eol=lf
+
+# 二进制：不要做行尾转换，也不要显示 diff
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.icns      binary
+*.pkdrawing binary
+
+# GitHub 语言统计：把 Swift 排在前面
+*.swift     linguist-language=Swift
